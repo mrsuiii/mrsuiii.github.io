@@ -85,6 +85,7 @@
         <button type="button" class="chip" data-filter="llm" aria-pressed="false">LLM &amp; Agents</button>
         <button type="button" class="chip" data-filter="ml" aria-pressed="false">Machine Learning</button>
         <button type="button" class="chip" data-filter="cv" aria-pressed="false">Computer Vision</button>
+        <button type="button" class="chip" data-filter="swe" aria-pressed="false">Software &amp; Systems</button>
       </div>
 
       <div class="grid featured">
@@ -112,12 +113,13 @@
 
         <article class="card reveal" data-cat="llm">
           <div class="card-top">
-            <span class="tag-cat">LLM · Fine-tuning</span>
+            <span class="tag-cat">LLM agents · Fine-tuning</span>
+            <a class="ext" href="https://github.com/mrsuiii/sellerops-agent" target="_blank" rel="noopener" aria-label="SellerOps on GitHub"><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
-          <h3>Fine-Tuning a Tool-Calling Agent</h3>
-          <p class="metric"><strong>0 → 55</strong> exact action matches on 78 held-out decisions</p>
-          <p>Full fine-tune of Qwen2.5-0.5B-Instruct on 440 multi-turn e-commerce agent conversations, with assistant-only loss masking and mixed precision. Schema-valid outputs rose from 15 to 78 and correct tool choice from 39/48 to 48/48.</p>
-          <ul class="tags"><li>PyTorch</li><li>Transformers</li><li>Qwen2.5</li></ul>
+          <h3>SellerOps: E-commerce LLM Agents</h3>
+          <p class="metric"><strong>17.9% → 100%</strong> schema-valid actions after fine-tuning (exact action match 0% → 70.5%)</p>
+          <p>A deterministic marketplace simulator, an isolated episode service with snapshot and replay, an outcome verifier, and a LangGraph router-action-tools runtime evaluated through LangSmith. Fully fine-tuned Qwen2.5-0.5B-Instruct on multi-turn agent conversations, plus a demo store backend shipped as a non-root Docker image with 116 tests.</p>
+          <ul class="tags"><li>LangGraph</li><li>FastAPI</li><li>PyTorch</li><li>Qwen2.5</li><li>Docker</li></ul>
         </article>
 
         <article class="card reveal" data-cat="ml">
@@ -167,6 +169,11 @@
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/spotify-recommendation-system" target="_blank" rel="noopener"><span class="row-title">Spotify Recommender</span><span class="row-desc">Content-based on lyrics with TF-IDF and cosine similarity</span><span class="row-stack">NLTK · scikit-learn</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/CNN-RNN-LSTM" target="_blank" rel="noopener"><span class="row-title">RNN &amp; LSTM Study</span><span class="row-desc">How depth, width, and bidirectionality affect macro F1</span><span class="row-stack">TensorFlow · Keras</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/5Class-Sentiment-Classifier-LSTM" target="_blank" rel="noopener"><span class="row-title">Review Sentiment Classifier</span><span class="row-desc">LSTM predicting 1 to 5 stars from Amazon Alexa reviews</span><span class="row-stack">TensorFlow · NLTK</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Multi-Exchange Signal Trading Bot</span><span class="row-desc">Discord signals to futures orders on six exchanges, WebSocket trailing stops, up to 11 live instances</span><span class="row-stack">Python · asyncio</span></div></li>
+        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Raft Key-Value Store</span><span class="row-desc">Team project: leader election, log replication, membership changes on a four-node cluster</span><span class="row-stack">TypeScript · Node.js · Docker</span></div></li>
+        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">FLIP Fluid Simulator</span><span class="row-desc">2D fluid simulation ported to CUDA with per-stage benchmarks and speedup charts</span><span class="row-stack">C++ · CUDA · OpenGL</span></div></li>
+        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Mini DBMS</span><span class="row-desc">Team project: storage-manager block writes and their unit tests</span><span class="row-stack">Python</span></div></li>
+        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">WikiRace</span><span class="row-desc">Breadth-first search over Wikipedia links for single and multiple shortest paths</span><span class="row-stack">Go · Docker</span></div></li>
       </ul>
       <p class="empty" hidden>No projects in this category yet.</p>
     </section>

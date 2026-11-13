@@ -207,3 +207,5 @@ svg { width: 1em; height: 1em; flex: none; }
   *, *::before, *::after { transition-duration: 0s !important; animation: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+.grid.featured:not(:has(.card:not([data-hidden]))) { display: none; }
+.grid.featured:not(:has(.card:not([data-hidden]))) + .sub { margin-top: 0; }

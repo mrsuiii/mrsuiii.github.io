@@ -154,6 +154,26 @@
           <p>Combines DINOv2 and SeqSLAM descriptors with dynamic time warping, checked against hand-labeled anchors. Outputs per-frame confidence scores and keep/discard manifests for building train and test sets.</p>
           <ul class="tags"><li>PyTorch</li><li>DINOv2</li><li>OpenCV</li></ul>
         </article>
+
+        <article class="card reveal" data-cat="swe">
+          <div class="card-top">
+            <span class="tag-cat">Backend · Trading automation</span>
+          </div>
+          <h3>Multi-Exchange Signal Trading Bot</h3>
+          <p class="metric"><strong>6 exchanges</strong>, up to 11 bot instances running on one Linux server</p>
+          <p>Built with one collaborator. Parses trade signals from Discord and places futures orders on Binance, Bybit, Bitget, BitMart, BingX, and Gate, with symbol resolution, volume filters, leverage-aware position sizing, and trailing stops over WebSocket price feeds. Ships with setup, status, and emergency-stop scripts, latency timing on every trading call, and a signal-parser test suite.</p>
+          <ul class="tags"><li>Python</li><li>asyncio</li><li>WebSocket</li><li>REST APIs</li><li>Bash</li></ul>
+        </article>
+
+        <article class="card reveal" data-cat="swe">
+          <div class="card-top">
+            <span class="tag-cat">Distributed systems · Team project</span>
+          </div>
+          <h3>Raft Consensus Key-Value Store</h3>
+          <p class="metric"><strong>4-node</strong> replicated cluster with dynamic membership changes</p>
+          <p>An implementation of the Raft protocol for a replicated key-value store: leader election, log replication, commit tracking, transactions, and adding or removing nodes at runtime. Runs as a four-node cluster with Docker Compose, covered by unit and integration tests.</p>
+          <ul class="tags"><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Jest</li><li>Docker Compose</li></ul>
+        </article>
       </div>
 
       <h3 class="sub">More projects</h3>
@@ -169,8 +189,6 @@
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/spotify-recommendation-system" target="_blank" rel="noopener"><span class="row-title">Spotify Recommender</span><span class="row-desc">Content-based on lyrics with TF-IDF and cosine similarity</span><span class="row-stack">NLTK · scikit-learn</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/CNN-RNN-LSTM" target="_blank" rel="noopener"><span class="row-title">RNN &amp; LSTM Study</span><span class="row-desc">How depth, width, and bidirectionality affect macro F1</span><span class="row-stack">TensorFlow · Keras</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         <li class="row reveal" data-cat="ml"><a href="https://github.com/mrsuiii/5Class-Sentiment-Classifier-LSTM" target="_blank" rel="noopener"><span class="row-title">Review Sentiment Classifier</span><span class="row-desc">LSTM predicting 1 to 5 stars from Amazon Alexa reviews</span><span class="row-stack">TensorFlow · NLTK</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
-        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Multi-Exchange Signal Trading Bot</span><span class="row-desc">Discord signals to futures orders on six exchanges, WebSocket trailing stops, up to 11 live instances</span><span class="row-stack">Python · asyncio</span></div></li>
-        <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Raft Key-Value Store</span><span class="row-desc">Team project: leader election, log replication, membership changes on a four-node cluster</span><span class="row-stack">TypeScript · Node.js · Docker</span></div></li>
         <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">FLIP Fluid Simulator</span><span class="row-desc">2D fluid simulation ported to CUDA with per-stage benchmarks and speedup charts</span><span class="row-stack">C++ · CUDA · OpenGL</span></div></li>
         <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">Mini DBMS</span><span class="row-desc">Team project: storage-manager block writes and their unit tests</span><span class="row-stack">Python</span></div></li>
         <li class="row reveal" data-cat="swe"><div class="row-inner"><span class="row-title">WikiRace</span><span class="row-desc">Breadth-first search over Wikipedia links for single and multiple shortest paths</span><span class="row-stack">Go · Docker</span></div></li>

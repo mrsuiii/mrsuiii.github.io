@@ -113,13 +113,13 @@
 
         <article class="card reveal" data-cat="llm">
           <div class="card-top">
-            <span class="tag-cat">LLM agents · Fine-tuning</span>
-            <a class="ext" href="https://github.com/mrsuiii/sellerops-agent" target="_blank" rel="noopener" aria-label="SellerOps on GitHub"><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <span class="tag-cat">LLM agents · Full-stack</span>
+            <a class="ext" href="https://github.com/mrsuiii/sellerops-agent" target="_blank" rel="noopener" aria-label="SellerOps Agent on GitHub"><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
-          <h3>SellerOps: E-commerce LLM Agents</h3>
-          <p class="metric"><strong>17.9% → 100%</strong> schema-valid actions after fine-tuning (exact action match 0% → 70.5%)</p>
-          <p>A deterministic marketplace simulator, an isolated episode service with snapshot and replay, an outcome verifier, and a LangGraph router-action-tools runtime evaluated through LangSmith. Fully fine-tuned Qwen2.5-0.5B-Instruct on multi-turn agent conversations, plus a demo store backend shipped as a non-root Docker image with 116 tests.</p>
-          <ul class="tags"><li>LangGraph</li><li>FastAPI</li><li>PyTorch</li><li>Qwen2.5</li><li>Docker</li></ul>
+          <h3>SellerOps Agent</h3>
+          <p class="metric"><strong>pass@1 0.91</strong> (pass^3 0.73) on the caption workflow with Claude Haiku 5.5; LLM judge not yet calibrated against human labels</p>
+          <p>A custom LangGraph seller agent with retries, fallback models, turn budgets, and human-in-the-loop approval via interrupt() on SQLite checkpoints. Caption changes are proposed, approved, and applied atomically with stale-proposal detection, versioned revert, and an append-only audit log, and a read-only chat answers sales, stock, and review questions. Evaluated on 19 multi-turn tasks over a synthetic 90-day sales simulator, and shipped as a full-stack demo store (FastAPI, React + TypeScript, BM25 recommender) in Docker with 319 pytest plus 13 Playwright and web tests.</p>
+          <ul class="tags"><li>LangGraph</li><li>Claude API</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>Docker</li></ul>
         </article>
 
         <article class="card reveal" data-cat="ml">
